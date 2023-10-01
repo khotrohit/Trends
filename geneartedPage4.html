@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Admin Dashboard</title>
+</head>
+<body>
+    <h1>Welcome Admin!</h1>
+    <p>You are logged in as an admin.</p>
+
+    <!-- Form for generating and editing pages -->
+    <h2>Create a New Page</h2>
+    <form id="pageForm">
+
+
+        <label for="meta2">Meta Keywords:</label>
+        <br>
+        <textarea id="meta2" name="meta2" rows="4" cols="150" required></textarea>
+        <br>
+
+        <label for="meta6">Meta Image:</label>
+        <br>
+       <textarea id="meta6" name="meta6" rows="2" cols="50" required></textarea>
+        <br>
+
+        <label for="meta7">Meta URL:</label>
+        <br>
+       <textarea id="meta7" name="meta7" rows="2" cols="100" required></textarea>
+        <br>
+
+        <label for="meta8"> Twitter Card:</label>
+        <br>
+       <textarea id="meta8" name="meta8" rows="2" cols="100" required></textarea>
+        <br>
+
+        <label for="page_Title">Page Title:</label>
+         <br>
+       <textarea id="page_Title" name="page_Title" rows="2" cols="100" required></textarea>
+        <br>
+
+        <label for="div1_img">Div1 Image:</label>
+         <br>
+       <textarea id="div1_img" name="div1_img" rows="2" cols="100" required></textarea>
+        <br>
+
+        <label for="div1_header">Div1 Header:</label>
+         <br>
+       <textarea id="div1_header" name="div1_header" rows="2" cols="100" required></textarea>
+        <br>
+
+        <label for="div1_content">Div1 Content:</label>
+         <br>
+       <textarea id="div1_content" name="div1_content" rows="2" cols="100" required></textarea>
+        <br>
+
+        <label for="div2_img">Div2 Image:</label>
+         <br>
+       <textarea id="div2_img" name="div2_img" rows="2" cols="100" required></textarea>
+        <br>
+
+        <label for="div2_header">Div2 Header:</label>
+         <br>
+       <textarea id="div2_header" name="div2_header" rows="2" cols="100" required></textarea>
+        <br>
+
+        <label for="div2_content">Div2 Content:</label>
+         <br>
+       <textarea id="div2_content" name="div2_content" rows="2" cols="100" required></textarea>
+        <br>
+
+        <label for="div3_img">Div3 Image:</label>
+         <br>
+       <textarea id="div3_img" name="div3_img" rows="2" cols="100" required></textarea>
+        <br>
+
+        <label for="div3_header">Div3 Header:</label>
+         <br>
+       <textarea id="div3_header" name="div3_header" rows="2" cols="100" required></textarea>
+        <br>
+
+        <label for="div3_content">Div3 Content:</label>
+         <br>
+       <textarea id="div3_content" name="div3_content" rows="2" cols="100" required></textarea>
+        <br>
+
+        <label for="div4_img">Div4 Image:</label>
+         <br>
+       <textarea id="div4_img" name="div4_img" rows="2" cols="100" required></textarea>
+        <br>
+
+        <label for="div4_header">Div4 Header:</label>
+         <br>
+       <textarea id="div4_header" name="div4_header" rows="2" cols="100" required></textarea>
+        <br>
+
+        <label for="div4_content">Div4 Content:</label>
+         <br>
+       <textarea id="div4_content" name="div4_content" rows="2" cols="100" required></textarea>
+        <br>
+
+        <label for="div5_img">Div5 Image:</label>
+         <br>
+       <textarea id="div5_img" name="div5_img" rows="2" cols="100" required></textarea>
+        <br>
+
+        <label for="div5_header">Div5 Header:</label>
+         <br>
+       <textarea id="div5_header" name="div5_header" rows="2" cols="100" required></textarea>
+        <br>
+
+        <label for="div5_content">Div5 Content:</label>
+         <br>
+       <textarea id="div5_content" name="div5_content" rows="2" cols="100" required></textarea>
+        <br>
+
+        <label for="div6_img">Div6 Image:</label>
+         <br>
+       <textarea id="div6_img" name="div6_img" rows="2" cols="100" required></textarea>
+        <br>
+
+        <label for="div6_header">Div6 Header:</label>
+         <br>
+       <textarea id="div6_header" name="div6_header" rows="2" cols="100" required></textarea>
+        <br>
+
+        <label for="div6_content">Div6 Content:</label>
+         <br>
+       <textarea id="div6_content" name="div6_content" rows="2" cols="100" required></textarea>
+        <br>
+
+        <button type="button" onclick="generatePageHandler()">Generate Page</button>
+
+    </form>
+
+    <script>
+        function generatePageHandler() {
+            const pageTitle = document.getElementById('page_Title').value;
+            const  meta2 = document.getElementById('meta2').value;
+            const  meta6 = document.getElementById('meta6').value;
+            const  meta7 = document.getElementById('meta7').value;
+            const  meta8 = document.getElementById('meta8').value;
+            const div1_img =   document.getElementById('div1_img').value;
+            const div1_header =   document.getElementById('div1_header').value;
+            const div1_content =   document.getElementById('div1_content').value;
+            const div2_img =   document.getElementById('div2_img').value;
+            const div2_header =   document.getElementById('div2_header').value;
+            const div2_content =   document.getElementById('div2_content').value;
+            const div3_img =   document.getElementById('div3_img').value;
+            const div3_header =   document.getElementById('div3_header').value;
+            const div3_content =   document.getElementById('div3_content').value;
+            const div4_img =   document.getElementById('div4_img').value;
+            const div4_header =   document.getElementById('div4_header').value;
+            const div4_content =   document.getElementById('div4_content').value;
+            const div5_img =   document.getElementById('div5_img').value;
+            const div5_header =   document.getElementById('div5_header').value;
+            const div5_content =   document.getElementById('div5_content').value;
+            const div6_img =   document.getElementById('div6_img').value;
+            const div6_header =   document.getElementById('div6_header').value;
+            const div6_content =   document.getElementById('div6_content').value;
+
+
+            // Create a new page with the provided title and content
+            const generatedPage4 = `<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TrendVista invites you to explore today's top 10 trends, handpicked for you. From breaking news to cultural phenomena, we are your TrendSpotter Daily. Join us on a journey through the ever-evolving world of trends!">
+    <meta name="keywords" content="${meta2}">
+    <meta name="author" content="Rohit Khot">
+      <link rel="stylesheet" href="css/components.css">
+      <link rel="stylesheet" href="css/icons.css">
+      <link rel="stylesheet" href="css/responsee.css">
+      <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
+      <link rel="stylesheet" href="owl-carousel/owl.theme.css">
+      <!-- CUSTOM STYLE -->
+      <link rel="stylesheet" href="css/template-style.css">
+      <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+
+    <!-- Social Media Meta Tags -->
+    <meta property="og:title" content="TrendVista: Explore Today's Top 10">
+    <meta property="og:description" content="TrendVista invites you to explore today's top 10 trends, handpicked for you. From breaking news to cultural phenomena, we are your TrendSpotter Daily. Join us on a journey through the ever-evolving world of trends!">
+    <meta property="og:image" content="${meta6}">
+    <meta property="og:url" content="${meta7}">
+    <meta name="twitter:card" content="${meta8}">
+
+    <title>${pageTitle}</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- CSS Stylesheets -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- JavaScript -->
+
+</head>
+   <body class="size-1280 slide-to-right">
+      <!-- <a href="index.html"><img class="logo" src="img/logo.svg"></a> -->
+      
+
+    
+      <div class="slide-content">  
+        <section id="right-content" class="s-12 m-10 l-8 xl-7 xxl-6 right">
+
+              <div class="line">
+                 <h1>${pageTitle}</h1>
+                 <div class="margin2x">
+                    
+                    <div class="s-12 m-12 l-6">
+                       <div class="service">
+                          <img src="${div1_img}" alt="">
+                          <h2>${div1_header}</h2>
+                          <p>${div1_content}</p> 
+                       </div>
+                    </div>
+                    
+                    <div class="s-12 m-12 l-6">
+                       <div class="service">
+                          <img src="${div2_img}" alt="">
+                          <h2>${div2_header}</h2>
+                          <p>${div2_content}</p>  
+                       </div>
+                    </div>
+                    
+                    <div class="s-12 m-12 l-6">
+                       <div class="service">
+                           <img src="${div3_img}" alt="">
+                          <h2>${div3_header}</h2>
+                          <p>${div3_content}</p>  
+                       </div>
+                    </div>
+                    
+                    <div class="s-12 m-12 l-6">
+                       <div class="service">
+                          <img src="${div4_img}" alt="">
+                          <h2>${div4_header}</h2>
+                          <p>${div4_content}</p>  
+                       </div>
+                    </div>
+                    
+                    <div class="s-12 m-12 l-6">
+                       <div class="service">
+                          <img src="${div5_img}" alt="">
+                          <h2>${div5_header}</h2>
+                          <p>${div5_content}</p> 
+                       </div>
+                    </div>
+                    
+                    <div class="s-12 m-12 l-6">
+                       <div class="service">
+                          <img src="${div6_img}" alt="">
+                          <h2>${div6_header}</h2>
+                          <p>${div6_content}</p> 
+                       </div>
+                    </div>
+                    
+                 </div>
+              </div>
+              
+        </section>
+      </div>
+      
+      <!-- FOOTER -->
+      <footer>
+         <p><b>Contact me: 0800 999 999 | mail@mydomain.com</b></p>
+         <p>Copyright 2022, Vision Design - graphic zoo</p>
+      </footer>
+      
+      <!-- BACKGROUND CAROUSEL --> 
+           <div id="background-carousel">
+              <div class="owl-carousel owl-theme">
+                 <div class="item" style="background-image: url(img/services.jpg)"></div>
+              </div>
+           </div>
+   </body>
+</html>
+`;
+
+            // Store the generated page in localStorage
+            localStorage.setItem('generatedPage4', generatedPage4);
+
+            // Redirect to the other HTML page
+            window.location.href = 'other_page4.html';
+        }
+    </script>
+</body>
+</html>
